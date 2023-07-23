@@ -5,4 +5,4 @@
 ## Chapter 1 - Thinking Contextually
 
 * [What is a Paradigm?](chapter-1-thinking-contextually/what-is-a-paradigm.md)
-* [What is Contextual Programming](chapter-1-thinking-contextually/what-is-contextual-programming.md)
+* [What is Contextual Programming?](chapter-1-thinking-contextually/what-is-contextual-programming.md)
