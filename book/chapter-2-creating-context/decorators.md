@@ -2,11 +2,118 @@
 
 ## Overview
 
+Contexts are primarily structures of data, but those data need to be checked for whether they qualify for operations/behaviors, and new contexts should be able to be produced, at least in part, from existing contexts. Decorators offer an optional way to meet both of these needs for any given context. Contextual Programming defines the following two types of decorators, although a language may [specify others for additional convenience](#user-content-fn-1)[^1].
 
+{% hint style="info" %}
+Records can have the decorators just as contexts do. This maintains the same purpose as decorators on contexts when records are nested within contexts or to produce new records based on existing records.
+{% endhint %}
 
 ## Qualifiers
 
+Qualifiers offer a way to query whether a context qualifies for an operation/behavior, in language appropriate for the purpose of the context. The result of a qualifier will always be a boolean[^2]. If the result is 'true', it can be said that the context 'qualifies'. How qualifiers are used is shown when operations are covered [in more detail](../chapter-3-evaluating-with-operations/expanding-on-when.md#operation-conditions).
 
+In general, a qualifier can be declared, within a context, following [this pattern](#user-content-fn-3)[^3]:
+
+```
+this "text with optional 'type name' for parameters": ('optional parameter name') => 
+    "logic that evaluates to a boolean"
+```
+
+{% hint style="warning" %}
+'this' is a keyword when used in this kind of declaration. It represents the context itself and must be the first word of a qualifier.
+{% endhint %}
+
+### A Parameterless Example
+
+A simple, parameterless, example building upon a context declared earlier:
+
+<pre><code>Some Int: context Int[0],
+    this is even: () => <a data-footnote-ref href="#user-content-fn-4">this % 2 = 0</a>.
+</code></pre>
+
+{% hint style="warning" %}
+Equality in Rede is checked for using a single '='. This is different than many other languages that use double equals, '=='.
+{% endhint %}
+
+### An Example with Parameters
+
+An example with parameters, again building upon a context declared earlier:
+
+```
+Position: context
+    {
+        X: Int;
+        Y: Int;
+    },
+    this matches Int and Int: (x, y) => this(X) = x && this(Y) = y.
+```
+
+{% hint style="warning" %}
+The 'x' and 'y' in "(x, y)" are associated with the two Ints in the declaration name. Parameters in this way match, by order, with the types in the name.
+{% endhint %}
+
+{% hint style="info" %}
+Throughout Rede, almost anything wrapped in parentheses is considered a "detail of", meaning something specific to the preceding declaration or value, the primary exception being when the order of operations is being clarified through parentheses.
+
+In this example, 'x' and 'y' are details of the Ints in the declaration name, they specify a name to associate with each Int, whereas "this(X)" is specifying the retrieval of the property 'X', which is a detail of the Position context.
+{% endhint %}
 
 ## Operators
 
+A common operator that most people are familiar with is '+', the addition operator. As with many programming operators, it has its roots in mathematics, and like its use in mathematics, it takes two instances (being numbers in math) and produces a new instance. Operators in Rede work much the same way.
+
+A type will, by default, have the operators of its ancestor, but it can add to, remove, or replace those operators. This section looks at adding (specific) operators, removal and replacement are covered [later](adaptation.md).
+
+### A Parameterless Example
+
+There are operators that do not take another instance. A prime example being negation[^5]. Looking again at the Position context from earlier, there's an opportunity to add a negation operator. The below example adds an operator to do so, on the last line:
+
+<pre><code>Position: context
+    {
+        X: Int;
+        Y: Int;
+    },
+    this matches Int and Int: (x, y) => this(X) = x &#x26;&#x26; this(Y) = y;
+    -this: () => <a data-footnote-ref href="#user-content-fn-6">{ X[-this(X)], Y[-this(Y)] }</a>.
+</code></pre>
+
+{% hint style="warning" %}
+The result of an operator must always be the same type as the type in which the operator is declared, and an instance of that type must always be described with 'this' before any parameters. The result here is a composition of named values that match a Position. It will be interpreted as a Position [when being provided as a result](#user-content-fn-7)[^7], since a Position's ancestor is a composition, and an instance of a Position is the expected result type.
+{% endhint %}
+
+{% hint style="info" %}
+In the above example, the "stand-in" syntax is being used to specify the values of the new Position's 'X' and 'Y'.
+{% endhint %}
+
+With this operator declared, negating a Position with code such as `-some position` will provide an expected and appropriate result.
+
+### An Example with Parameters
+
+The Position example can be extended again with an operator that takes a parameter, like so:
+
+```
+Position: context
+    {
+        X: Int;
+        Y: Int;
+    },
+    this matches Int and Int: (x, y) => this(X) = x && this(Y) = y;
+    -this: () => { X[-this(X)], Y[-this(Y)] };
+    this + Position: (other) => { X[this(X) + other(X)], Y[this(Y) + other(Y)] }.
+```
+
+Now a Position can be added to another Position through code such as `some position + another position`, with the result being the actual addition of those two Positions.
+
+[^1]: For example, Rede offers Modifiers, as syntactic sugar to alter several of a context's properties together.
+
+[^2]: A value that is either 'true' or 'false'.
+
+[^3]: As before, text within double quotations here would be replaced by text meaningful to an actual declaration. Text within single quotations is additional optional text to be specified.
+
+[^4]: This code is a statement that means "the value of this Some Int, modulus 2, equals 0", the result of which (a boolean) will be returned. It will always be 'true' for any Some Int that is divisible by 2 (any even number) and 'false' for any other value.
+
+[^5]: As may be expected, negation should negate a value, like turning 1 to -1.
+
+[^6]: This result is a new Position instance. The new instance has the negated value of the original instance's 'X' for its own 'X' and the negated value of the original instance's 'Y' for its own 'Y'.
+
+[^7]: This is also called being "returned" and the value that is returned may simply be called the "return".

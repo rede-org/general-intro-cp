@@ -23,23 +23,23 @@ In general, a context declaration looks like the following, where text within qu
 
 Here are a couple of concrete examples of declaring contexts:
 
-{% hint style="info" %}
+{% hint style="warning" %}
 By the way, comments[^4] in Rede are any text contained within backticks ( \` ).
 {% endhint %}
 
-<pre><code>`An adaptation of the built-in Int type.`
+<pre><code>`An adaptation of the built-in <a data-footnote-ref href="#user-content-fn-5">Int</a> type.`
 
-Some <a data-footnote-ref href="#user-content-fn-5">Int</a>: context Int.
+Some Int: context Int.
 </code></pre>
 
 ```
 `A context for two integers, intended to be used as a position.`
 
 Position: context
-{
-    X: Int;
-    Y: Int;
-}.
+    {
+        X: Int;
+        Y: Int;
+    }.
 ```
 
 {% hint style="info" %}
@@ -56,10 +56,10 @@ Some Int: context Int [-1].
 
 ```
 Position: context
-{
-    X: Int [-1];
-    Y: Int [-1];
-}.
+    {
+        X: Int [-1];
+        Y: Int [-1];
+    }.
 ```
 
 {% hint style="info" %}
