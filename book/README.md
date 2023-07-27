@@ -44,3 +44,23 @@ If the reader is familiar with another paradigm and is finding it difficult to s
 Examples are provided to give a more concrete understanding of the concepts. All code is written in the [Rede programming language](http://127.0.0.1:5000/s/FfOPeCfV66IeaZZd4Exu/), however, not all features of that language will be used, and this book is not intended to be used as a learning resource for Rede. There are many features of Rede that simplify development and encourage best practices for more maintainable and scalable development. The reader is advised to explore those features when they feel comfortable with the concepts of Contextual Programming.
 
 Readers are encouraged to experiment with the code examples on their own to further their understanding, but there are no explicit assignments defined by this book.
+
+
+
+## Notes on Reading this Book
+
+Annotations[^1] are details for specific text that are mostly relevant to new programmers. They will explain terminology or concepts that are general to programming.
+
+{% hint style="info" %}
+Text in this type of box will provide a bit of useful information, however, it is usually not required to learn the paradigm or to program in Rede. Most often, this information will be relevant to gaining a greater understanding of Rede, or it will be a slight tangent off of the main topic.
+{% endhint %}
+
+{% hint style="warning" %}
+Text in this type of box is important for understanding what is currently being presented and for learning how to program in Rede.
+{% endhint %}
+
+{% hint style="danger" %}
+Text in this type of box will emphasize a point that is critical to understand the paradigm.
+{% endhint %}
+
+[^1]: Like this one.
