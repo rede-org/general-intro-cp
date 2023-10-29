@@ -21,8 +21,8 @@
 
 ## Chapter 4 - Reacting with Behaviors
 
-* [4.1  From 'When' to 'Whenever'](chapter-4-reacting-with-behaviors/4.1-from-when-to-whenever.md)
-* [4.2  Return to Hello World!](chapter-4-reacting-with-behaviors/4.2-return-to-hello-world.md)
+* [4.1  Revisiting Hello World!](chapter-4-reacting-with-behaviors/4.1-revisiting-hello-world.md)
+* [4.2  From 'When' to 'Whenever'](chapter-4-reacting-with-behaviors/4.2-from-when-to-whenever.md)
 * [4.3  Working with Buckets](chapter-4-reacting-with-behaviors/4.3-working-with-buckets.md)
 * [4.4  Expanding Purpose](chapter-4-reacting-with-behaviors/4.4-expanding-purpose.md)
 
