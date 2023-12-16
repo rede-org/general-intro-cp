@@ -25,6 +25,7 @@
 * [4.2  From 'When' to 'Whenever'](chapter-4-reacting-with-behaviors/4.2-from-when-to-whenever.md)
 * [4.3  Working with Buckets](chapter-4-reacting-with-behaviors/4.3-working-with-buckets.md)
 * [4.4  Expanding Purpose](chapter-4-reacting-with-behaviors/4.4-expanding-purpose.md)
+* [4.5 Adapting Behaviors](chapter-4-reacting-with-behaviors/4.5-adapting-behaviors.md)
 
 ## Chapter 5 - Evaluating Through Compositions
 
