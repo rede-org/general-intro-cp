@@ -27,25 +27,19 @@
 * [4.4  Expanding Purpose](chapter-4-reacting-with-behaviors/4.4-expanding-purpose.md)
 * [4.5 Adapting Behaviors](chapter-4-reacting-with-behaviors/4.5-adapting-behaviors.md)
 
-## Chapter 5 - Evaluating Through Compositions
+## Chapter 5 - Abstracting Evaluations
 
-* [5.1  Composing Contexts](chapter-5-evaluating-through-compositions/5.1-composing-contexts.md)
-* [5.2  Contextualizing Compositions](chapter-5-evaluating-through-compositions/5.2-contextualizing-compositions.md)
-* [5.3  Nested Compositions](chapter-5-evaluating-through-compositions/5.3-nested-compositions.md)
+* [5.1  Compositions](chapter-5-abstracting-evaluations/5.1-compositions.md)
+* [5.2  Operables](chapter-5-abstracting-evaluations/5.2-operables.md)
 
-## Chapter 6 - Abstracting Evaluations
+## Chapter 6 - Abstracting Contexts and Changes
 
-* [6.1  Composing Operables](chapter-6-abstracting-evaluations/6.1-composing-operables.md)
-* [6.2  Evaluating Operables](chapter-6-abstracting-evaluations/6.2-evaluating-operables.md)
+* [6.1  Contracts](chapter-6-abstracting-contexts-and-changes/6.1-contracts.md)
+* [6.2  Generics](chapter-6-abstracting-contexts-and-changes/6.2-generics.md)
+* [6.3  Mutualism](chapter-6-abstracting-contexts-and-changes/6.3-mutualism.md)
+* [6.4  Context Identifiers](chapter-6-abstracting-contexts-and-changes/6.4-context-identifiers.md)
 
-## Chapter 7 - Abstracting Contexts and Changes
+## Chapter 7 - Looking to What's Next
 
-* [7.1  Contracts](chapter-7-abstracting-contexts-and-changes/7.1-contracts.md)
-* [7.2  Generics](chapter-7-abstracting-contexts-and-changes/7.2-generics.md)
-* [7.3  Mutualism](chapter-7-abstracting-contexts-and-changes/7.3-mutualism.md)
-* [7.4  Context Identifiers](chapter-7-abstracting-contexts-and-changes/7.4-context-identifiers.md)
-
-## Chapter 8 - Looking to What's Next
-
-* [8.1  Final Thoughts](chapter-8-looking-to-whats-next/8.1-final-thoughts.md)
-* [8.2  Additional Resources](chapter-8-looking-to-whats-next/8.2-additional-resources.md)
+* [7.1  Final Thoughts](chapter-7-looking-to-whats-next/7.1-final-thoughts.md)
+* [7.2  Additional Resources](chapter-7-looking-to-whats-next/7.2-additional-resources.md)

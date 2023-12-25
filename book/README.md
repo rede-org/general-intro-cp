@@ -41,7 +41,7 @@ If the reader is familiar with another paradigm and is finding it difficult to s
 
 ### Code Examples
 
-Examples are provided to give a more concrete understanding of the concepts. All code is written in the [Rede programming language](http://127.0.0.1:5000/s/FfOPeCfV66IeaZZd4Exu/), however, not all features of that language will be used, and this book is not intended to be used as a learning resource for Rede. There are many features of Rede that simplify development and encourage best practices for more maintainable and scalable development. The reader is advised to explore those features when they feel comfortable with the concepts of Contextual Programming.
+Examples are provided to give a more concrete understanding of the concepts. All code is written in the [Rede programming language](https://app.gitbook.com/s/FfOPeCfV66IeaZZd4Exu/), however, not all features of that language will be used, and this book is not intended to be used as a learning resource for Rede. There are many features of Rede that simplify development and encourage best practices for more maintainable and scalable development. The reader is advised to explore those features when they feel comfortable with the concepts of Contextual Programming.
 
 Readers are encouraged to experiment with the code examples on their own to further their understanding, but there are no explicit assignments defined by this book.
 
