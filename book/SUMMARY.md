@@ -35,9 +35,8 @@
 ## Chapter 6 - Abstracting Contexts and Changes
 
 * [6.1  Contracts](chapter-6-abstracting-contexts-and-changes/6.1-contracts.md)
-* [6.2  Generics](chapter-6-abstracting-contexts-and-changes/6.2-generics.md)
-* [6.3  Mutualism](chapter-6-abstracting-contexts-and-changes/6.3-mutualism.md)
-* [6.4  Context Identifiers](chapter-6-abstracting-contexts-and-changes/6.4-context-identifiers.md)
+* [6.2  Mutualism](chapter-6-abstracting-contexts-and-changes/6.2-mutualism.md)
+* [6.3  Context Identifiers](chapter-6-abstracting-contexts-and-changes/6.3-context-identifiers.md)
 
 ## Chapter 7 - Looking to What's Next
 
