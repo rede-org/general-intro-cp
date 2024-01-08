@@ -32,11 +32,10 @@
 * [5.1  Compositions](chapter-5-abstracting-evaluations/5.1-compositions.md)
 * [5.2  Operables](chapter-5-abstracting-evaluations/5.2-operables.md)
 
-## Chapter 6 - Abstracting Contexts and Changes
+## Chapter 6 - Abstracting Contexts
 
-* [6.1  Contracts](chapter-6-abstracting-contexts-and-changes/6.1-contracts.md)
-* [6.2  Mutualism](chapter-6-abstracting-contexts-and-changes/6.2-mutualism.md)
-* [6.3  Context Identifiers](chapter-6-abstracting-contexts-and-changes/6.3-context-identifiers.md)
+* [6.1  Contracts](chapter-6-abstracting-contexts/6.1-contracts.md)
+* [6.2  Context Identifiers](chapter-6-abstracting-contexts/6.2-context-identifiers.md)
 
 ## Chapter 7 - Looking to What's Next
 
