@@ -17,7 +17,7 @@
 
 * [3.1  Hello World!](chapter-3-evaluating-with-operations/3.1-hello-world.md)
 * [3.2  Expanding on 'When'](chapter-3-evaluating-with-operations/3.2-expanding-on-when.md)
-* [3.3  Operation Groups](chapter-3-evaluating-with-operations/3.3-operation-groups.md)
+* [3.3  Operation Hierarchies](chapter-3-evaluating-with-operations/3.3-operation-hierarchies.md)
 
 ## Chapter 4 - Reacting with Behaviors
 
