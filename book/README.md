@@ -22,6 +22,7 @@ layout:
 
 # A General Introduction to Contextual Programming
 
+**First Edition - October 2024**\
 By Lucas Stertz
 
 
@@ -49,7 +50,7 @@ Readers are encouraged to experiment with the code examples on their own to furt
 
 ## Notes on Reading this Book
 
-Annotations[^1] are details for specific text that are mostly relevant to new programmers. They will explain terminology or concepts that are general to programming.
+Annotations[^1] are details for specific text that are mostly relevant to new programmers or provide additional context to what is being described. They will often explain terminology or concepts that are general to programming.
 
 {% hint style="info" %}
 Text in this type of box will provide a bit of useful information, however, it is usually not required to learn the paradigm or to program in Rede. Most often, this information will be relevant to gaining a greater understanding of Rede, or it will be a slight tangent off of the main topic.
